@@ -56,15 +56,31 @@
 		A85F6BBF289A9C3B00C58BD3 /* SurfSummerSchool2022 */ = {
 			isa = PBXGroup;
 			children = (
-				A85F6BC0289A9C3B00C58BD3 /* AppDelegate.swift */,
-				A85F6BC2289A9C3B00C58BD3 /* SceneDelegate.swift */,
+				A85F6BD4289A9EE600C58BD3 /* Application */,
+				A85F6BD5289A9F4100C58BD3 /* Resources */,
 				A85F6BC4289A9C3B00C58BD3 /* ViewController.swift */,
 				A85F6BC6289A9C3B00C58BD3 /* Main.storyboard */,
-				A85F6BC9289A9C3D00C58BD3 /* Assets.xcassets */,
 				A85F6BCB289A9C3D00C58BD3 /* LaunchScreen.storyboard */,
-				A85F6BCE289A9C3D00C58BD3 /* Info.plist */,
 			);
 			path = SurfSummerSchool2022;
+			sourceTree = "<group>";
+		};
+		A85F6BD4289A9EE600C58BD3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A85F6BC0289A9C3B00C58BD3 /* AppDelegate.swift */,
+				A85F6BC2289A9C3B00C58BD3 /* SceneDelegate.swift */,
+				A85F6BCE289A9C3D00C58BD3 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A85F6BD5289A9F4100C58BD3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A85F6BC9289A9C3D00C58BD3 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,12 +307,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BR2TY2CKR7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SurfSummerSchool2022/Info.plist;
+				INFOPLIST_FILE = SurfSummerSchool2022/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +323,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,12 +336,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BR2TY2CKR7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SurfSummerSchool2022/Info.plist;
+				INFOPLIST_FILE = SurfSummerSchool2022/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +352,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
