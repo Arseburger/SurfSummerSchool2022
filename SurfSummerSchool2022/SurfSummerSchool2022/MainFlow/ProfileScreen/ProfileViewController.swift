@@ -16,8 +16,9 @@ final class ProfileViewController: UIViewController {
         configureAppearence()
     }
     
+    // MARK: UI Setup -
+    
     private func configureAppearence() {
         navigationItem.title = "Профиль"
-        
     }
 }

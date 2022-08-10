@@ -13,9 +13,10 @@ final class FavoriteViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         configureAppearence()
     }
+    
+    // MARK: UI Setup -
 
     private func configureAppearence() {
         navigationItem.title = "Избранное"
@@ -30,6 +31,6 @@ final class FavoriteViewController: UIViewController {
     
     @objc
     private func searchButtonTapped() {
-    }
     
+    }
 }

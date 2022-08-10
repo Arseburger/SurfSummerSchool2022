@@ -58,5 +58,4 @@ private extension TabBarConfigurator {
                 return ProfileViewController()
         }
     }
-    
 }

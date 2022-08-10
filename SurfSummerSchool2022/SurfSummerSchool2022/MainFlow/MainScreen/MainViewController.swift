@@ -16,6 +16,8 @@ final class MainViewController: UIViewController {
         configureAppearence()
     }
     
+    // MARK: UI Setup -
+    
     private func configureAppearence() {
         navigationItem.title = "Главная"
         navigationController?.navigationBar.tintColor = .black
@@ -29,6 +31,6 @@ final class MainViewController: UIViewController {
     
     @objc
     private func searchButtonTapped() {
+        
     }
-    
 }
