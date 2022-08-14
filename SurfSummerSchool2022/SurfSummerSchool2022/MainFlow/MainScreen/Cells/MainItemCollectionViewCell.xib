@@ -10,22 +10,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MainItemCollectionViewCell" customModule="SurfSummerSchool2022" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MainItemCollectionViewCell" id="gTV-IL-0wX" customClass="MainItemCollectionViewCell" customModule="SurfSummerSchool2022" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="311" height="493"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="311" height="493"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yz-r5-9Sc">
-                        <rect key="frame" x="0.0" y="477" width="31" height="16"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="16" id="Nvv-0B-X4p"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="Xg4-em-Dkk">
+                        <rect key="frame" x="0.0" y="0.0" width="311" height="461"/>
+                    </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOf-Dd-Y62">
                         <rect key="frame" x="271" y="8" width="32" height="32"/>
                         <constraints>
@@ -39,9 +33,15 @@
                             <action selector="favoriteButtonPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="tgK-9w-QyS"/>
                         </connections>
                     </button>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultImage" translatesAutoresizingMaskIntoConstraints="NO" id="Xg4-em-Dkk">
-                        <rect key="frame" x="0.0" y="0.0" width="311" height="469"/>
-                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yz-r5-9Sc">
+                        <rect key="frame" x="0.0" y="469" width="31" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="Nvv-0B-X4p"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
@@ -50,10 +50,10 @@
                 <constraint firstAttribute="trailing" secondItem="Xg4-em-Dkk" secondAttribute="trailing" id="5nc-YU-Eay"/>
                 <constraint firstItem="7Yz-r5-9Sc" firstAttribute="top" secondItem="Xg4-em-Dkk" secondAttribute="bottom" constant="8" id="BQ2-mJ-LKr"/>
                 <constraint firstItem="Xg4-em-Dkk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ymj-Jn-GdJ"/>
-                <constraint firstItem="vOf-Dd-Y62" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="g4N-yG-lEQ"/>
+                <constraint firstItem="vOf-Dd-Y62" firstAttribute="top" secondItem="Xg4-em-Dkk" secondAttribute="top" constant="8" id="g4N-yG-lEQ"/>
                 <constraint firstItem="Xg4-em-Dkk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="g8M-21-nKO"/>
-                <constraint firstAttribute="bottom" secondItem="7Yz-r5-9Sc" secondAttribute="bottom" id="hIU-d8-juF"/>
-                <constraint firstAttribute="trailing" secondItem="vOf-Dd-Y62" secondAttribute="trailing" constant="8" id="hMA-0H-u8C"/>
+                <constraint firstAttribute="bottom" secondItem="7Yz-r5-9Sc" secondAttribute="bottom" constant="8" id="hIU-d8-juF"/>
+                <constraint firstItem="Xg4-em-Dkk" firstAttribute="trailing" secondItem="vOf-Dd-Y62" secondAttribute="trailing" constant="8" id="hMA-0H-u8C"/>
                 <constraint firstItem="7Yz-r5-9Sc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ngK-s3-Zdx"/>
             </constraints>
             <size key="customSize" width="311" height="493"/>

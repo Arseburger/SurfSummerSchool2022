@@ -7,39 +7,39 @@
 
 import UIKit
 
+// MARK: Constants -
+
+private enum Images {
+    static let heartEmpty = UIImage(named: "heartEmpty")
+    static let heartFilled = UIImage(named: "heartFilled")
+}
+
 class MainItemCollectionViewCell: UICollectionViewCell {
 
-    // MARK: - @IBOutlets
+    // MARK: Views -
     
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var isFavoriteButton: UIButton!
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet private weak var imageView: UIImageView!
+    @IBOutlet private weak var isFavoriteButton: UIButton!
+    @IBOutlet private weak var titleLabel: UILabel!
     
-    // MARK: - Events
+    // MARK: Events -
     
-    var updateFavorite: (Bool) -> Void = { _ in }
+    var didPressFavoriteButton: ((Bool) -> Void)?
     
-    // MARK: - Private Properies
+    // MARK: Private Properies -
     
     private var isFavorite: Bool = false {
         didSet {
-            isFavoriteButton.setImage(
-                isFavorite ?
-                    .init(named: "heartFilled") :
-                    .init(named: "heartEmpty"),
-                for: .normal)
+            isFavoriteButton.setImage(isFavorite ? Images.heartFilled : Images.heartEmpty, for: .normal)
         }
     }
     
-    // MARK: - Lifecycle
+    // MARK: Setup -
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.layer.cornerRadius = 12
+        setupAppearence()
     }
-    
-    // MARK: - Data Fillment
     
     func configure(with item: ItemModel) {
         imageView.image = item.image
@@ -47,10 +47,24 @@ class MainItemCollectionViewCell: UICollectionViewCell {
         self.isFavorite = item.isFavorite
     }
     
-    // MARK: - @IBActions
-    
-    @IBAction private func favoriteButtonPressed(_ sender: Any) {
-        self.updateFavorite(isFavorite)
+    override func prepareForReuse() {
+        configure(with: ItemModel.defaultItem)
     }
     
+    // MARK: Actions -
+    
+    @IBAction private func favoriteButtonPressed(_ sender: Any) {
+        isFavorite.toggle()
+        self.didPressFavoriteButton?(isFavorite)
+    }
+}
+
+// MARK: Private Methods -
+
+extension MainItemCollectionViewCell {
+    
+    func setupAppearence() {
+        imageView.layer.cornerRadius = 12
+        isFavoriteButton.tintColor = Colors.favoriteButton
+    }
 }
