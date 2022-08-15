@@ -11,6 +11,11 @@
 		A842970428A4250900474704 /* MainItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A842970228A4250900474704 /* MainItemCollectionViewCell.xib */; };
 		A842970828A427A300474704 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A842970728A427A300474704 /* MainModel.swift */; };
 		A842970B28A99BA100474704 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A842970A28A99BA100474704 /* Colors.swift */; };
+		A844DC4428A9A8D100926CC0 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A844DC4228A9A8D100926CC0 /* MainTableViewCell.swift */; };
+		A844DC4528A9A8D100926CC0 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A844DC4328A9A8D100926CC0 /* MainTableViewCell.xib */; };
+		A844DC4828A9A8E900926CC0 /* SingleFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A844DC4628A9A8E900926CC0 /* SingleFieldTableViewCell.swift */; };
+		A844DC4928A9A8E900926CC0 /* SingleFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A844DC4728A9A8E900926CC0 /* SingleFieldTableViewCell.xib */; };
+		A844DC4D28A9B28F00926CC0 /* ProfileConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A844DC4C28A9B28F00926CC0 /* ProfileConfigurator.swift */; };
 		A85F6BC1289A9C3B00C58BD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85F6BC0289A9C3B00C58BD3 /* AppDelegate.swift */; };
 		A85F6BCA289A9C3D00C58BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A85F6BC9289A9C3D00C58BD3 /* Assets.xcassets */; };
 		A85F6BCD289A9C3D00C58BD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A85F6BCB289A9C3D00C58BD3 /* LaunchScreen.storyboard */; };
@@ -29,6 +34,11 @@
 		A842970228A4250900474704 /* MainItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		A842970728A427A300474704 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		A842970A28A99BA100474704 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		A844DC4228A9A8D100926CC0 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		A844DC4328A9A8D100926CC0 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		A844DC4628A9A8E900926CC0 /* SingleFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFieldTableViewCell.swift; sourceTree = "<group>"; };
+		A844DC4728A9A8E900926CC0 /* SingleFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleFieldTableViewCell.xib; sourceTree = "<group>"; };
+		A844DC4C28A9B28F00926CC0 /* ProfileConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileConfigurator.swift; sourceTree = "<group>"; };
 		A85F6BBD289A9C3B00C58BD3 /* SurfSummerSchool2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfSummerSchool2022.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A85F6BC0289A9C3B00C58BD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A85F6BC9289A9C3D00C58BD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +72,33 @@
 				A842970228A4250900474704 /* MainItemCollectionViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		A844DC3F28A9A84D00926CC0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A844DC4028A9A86600926CC0 /* MainTableViewCell */,
+				A844DC4128A9A8A700926CC0 /* SingleFieldTableViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A844DC4028A9A86600926CC0 /* MainTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A844DC4228A9A8D100926CC0 /* MainTableViewCell.swift */,
+				A844DC4328A9A8D100926CC0 /* MainTableViewCell.xib */,
+			);
+			path = MainTableViewCell;
+			sourceTree = "<group>";
+		};
+		A844DC4128A9A8A700926CC0 /* SingleFieldTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A844DC4628A9A8E900926CC0 /* SingleFieldTableViewCell.swift */,
+				A844DC4728A9A8E900926CC0 /* SingleFieldTableViewCell.xib */,
+			);
+			path = SingleFieldTableViewCell;
 			sourceTree = "<group>";
 		};
 		A85F6BB4289A9C3B00C58BD3 = {
@@ -143,8 +180,10 @@
 		A85F6BD9289AA25A00C58BD3 /* ProfileScreen */ = {
 			isa = PBXGroup;
 			children = (
+				A844DC3F28A9A84D00926CC0 /* Cells */,
 				A85F6BE3289AA2B400C58BD3 /* ProfileViewController.swift */,
 				A85F6BE4289AA2B400C58BD3 /* ProfileViewController.xib */,
+				A844DC4C28A9B28F00926CC0 /* ProfileConfigurator.swift */,
 			);
 			path = ProfileScreen;
 			sourceTree = "<group>";
@@ -220,7 +259,9 @@
 				A85F6BDE289AA29300C58BD3 /* MainViewController.xib in Resources */,
 				A842970428A4250900474704 /* MainItemCollectionViewCell.xib in Resources */,
 				A85F6BE2289AA2A500C58BD3 /* FavoriteViewController.xib in Resources */,
+				A844DC4528A9A8D100926CC0 /* MainTableViewCell.xib in Resources */,
 				A85F6BE6289AA2B400C58BD3 /* ProfileViewController.xib in Resources */,
+				A844DC4928A9A8E900926CC0 /* SingleFieldTableViewCell.xib in Resources */,
 				A85F6BCA289A9C3D00C58BD3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,10 +273,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A844DC4D28A9B28F00926CC0 /* ProfileConfigurator.swift in Sources */,
+				A844DC4828A9A8E900926CC0 /* SingleFieldTableViewCell.swift in Sources */,
 				A842970828A427A300474704 /* MainModel.swift in Sources */,
 				A842970B28A99BA100474704 /* Colors.swift in Sources */,
 				A85F6BDD289AA29300C58BD3 /* MainViewController.swift in Sources */,
 				A85F6BC1289A9C3B00C58BD3 /* AppDelegate.swift in Sources */,
+				A844DC4428A9A8D100926CC0 /* MainTableViewCell.swift in Sources */,
 				A85F6BE5289AA2B400C58BD3 /* ProfileViewController.swift in Sources */,
 				A842970328A4250900474704 /* MainItemCollectionViewCell.swift in Sources */,
 				A85F6BE1289AA2A500C58BD3 /* FavoriteViewController.swift in Sources */,
