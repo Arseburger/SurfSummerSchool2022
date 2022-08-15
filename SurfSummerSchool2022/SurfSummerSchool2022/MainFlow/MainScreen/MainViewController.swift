@@ -36,10 +36,16 @@ final class MainViewController: UIViewController {
         collectionView.reloadData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
     // MARK: Actions -
     
     @objc
     private func searchButtonTapped() {
+        let vc = SearchViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
