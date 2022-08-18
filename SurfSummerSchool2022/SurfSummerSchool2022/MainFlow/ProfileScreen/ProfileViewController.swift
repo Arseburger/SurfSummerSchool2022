@@ -13,12 +13,12 @@ final class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureAppearence()
+        setupAppearence()
     }
     
     // MARK: UI Setup -
     
-    private func configureAppearence() {
+    private func setupAppearence() {
         navigationItem.title = "Профиль"
     }
 }

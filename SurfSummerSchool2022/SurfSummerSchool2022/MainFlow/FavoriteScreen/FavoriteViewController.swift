@@ -13,24 +13,18 @@ final class FavoriteViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureAppearence()
+        setupAppearence()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     // MARK: UI Setup -
 
-    private func configureAppearence() {
+    private func setupAppearence() {
         navigationItem.title = "Избранное"
         navigationController?.navigationBar.tintColor = .black
-        navigationItem.rightBarButtonItem = UIBarButtonItem(
-            image: UIImage(named: "searchIcon"),
-            style: .plain,
-            target: self,
-            action: #selector(searchButtonTapped)
-        )
-    }
-    
-    @objc
-    private func searchButtonTapped() {
-    
+        addNavigationBarSearchButton()
     }
 }
