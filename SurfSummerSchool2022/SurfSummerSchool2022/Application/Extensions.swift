@@ -24,3 +24,11 @@ extension UIViewController {
         navigationController?.pushViewController(searchVC, animated: true)
     }
 }
+
+extension UINavigationController {
+    func setupAppearence() {
+        navigationBar.backIndicatorImage = UIImage(named: "backArrowIcon")
+        navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "backArrowIcon")
+        navigationBar.titleTextAttributes = [.font : Fonts.SFProText.semibold?.withSize(17.0) ?? .systemFont(ofSize: 17.0, weight: .semibold)]
+    }
+}

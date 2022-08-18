@@ -39,10 +39,6 @@ final class MainViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
-    
-    // MARK: Actions -
-    
-    
 }
 
 // MARK: Setup Methods -
