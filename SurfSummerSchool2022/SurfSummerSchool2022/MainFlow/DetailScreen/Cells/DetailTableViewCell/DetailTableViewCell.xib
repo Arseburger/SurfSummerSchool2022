@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailTableViewCell" customModule="SurfSummerSchool2022" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="DetailTableViewCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" rowHeight="719" id="KGk-i7-Jjw" customClass="DetailTableViewCell" customModule="SurfSummerSchool2022" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="719"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="420" height="719"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17i-IL-uLq">
+                        <rect key="frame" x="16" y="16" width="388" height="408"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="17i-IL-uLq" secondAttribute="height" multiplier="1:1.052" id="I9i-Dx-bag"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5dZ-8i-xK4">
+                        <rect key="frame" x="16" y="440" width="388" height="24"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlJ-dT-Blr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="24"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRF-BS-Bzb">
+                                <rect key="frame" x="328" y="0.0" width="60" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="mp9-LY-7qv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="YRF-BS-Bzb" secondAttribute="bottom" id="APW-tt-CBF"/>
+                            <constraint firstItem="YRF-BS-Bzb" firstAttribute="top" secondItem="5dZ-8i-xK4" secondAttribute="top" id="JEM-Bh-Nmn"/>
+                            <constraint firstAttribute="bottom" secondItem="vlJ-dT-Blr" secondAttribute="bottom" id="WSC-rd-Bj8"/>
+                            <constraint firstAttribute="height" constant="24" id="ewc-PR-q2M"/>
+                            <constraint firstItem="vlJ-dT-Blr" firstAttribute="top" secondItem="5dZ-8i-xK4" secondAttribute="top" id="i3B-Uy-0oF"/>
+                            <constraint firstAttribute="trailing" secondItem="YRF-BS-Bzb" secondAttribute="trailing" id="rRR-Cj-0Sl"/>
+                            <constraint firstItem="vlJ-dT-Blr" firstAttribute="leading" secondItem="5dZ-8i-xK4" secondAttribute="leading" id="wn7-TF-MZB"/>
+                        </constraints>
+                    </stackView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYF-X7-ecW">
+                        <rect key="frame" x="16" y="472" width="388" height="231"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <viewLayoutGuide key="contentLayoutGuide" id="9Xd-Og-fhZ"/>
+                        <viewLayoutGuide key="frameLayoutGuide" id="l9U-Qk-WCL"/>
+                        <attributedString key="attributedText">
+                            <fragment content=" ">
+                                <attributes>
+                                    <font key="NSFont" size="12" name="SFProText-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jYF-X7-ecW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="2se-vS-C6Z"/>
+                    <constraint firstAttribute="trailing" secondItem="17i-IL-uLq" secondAttribute="trailing" constant="16" id="HO6-na-oAd"/>
+                    <constraint firstItem="5dZ-8i-xK4" firstAttribute="top" secondItem="17i-IL-uLq" secondAttribute="bottom" constant="16" id="LFW-nM-YUg"/>
+                    <constraint firstItem="jYF-X7-ecW" firstAttribute="top" secondItem="5dZ-8i-xK4" secondAttribute="bottom" constant="8" id="MXI-PW-U9J"/>
+                    <constraint firstAttribute="trailing" secondItem="jYF-X7-ecW" secondAttribute="trailing" constant="16" id="TK1-QH-ek0"/>
+                    <constraint firstItem="17i-IL-uLq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Wnj-XR-NVE"/>
+                    <constraint firstAttribute="trailing" secondItem="5dZ-8i-xK4" secondAttribute="trailing" constant="16" id="g5t-uu-TxC"/>
+                    <constraint firstItem="17i-IL-uLq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="jww-78-HpG"/>
+                    <constraint firstAttribute="bottom" secondItem="jYF-X7-ecW" secondAttribute="bottom" constant="16" id="uWK-gi-GIY"/>
+                    <constraint firstItem="5dZ-8i-xK4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="wak-cJ-gnh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="creationDateLabel" destination="YRF-BS-Bzb" id="ZfQ-Ya-Rbs"/>
+                <outlet property="descriptionTextView" destination="jYF-X7-ecW" id="ES4-KN-Tyn"/>
+                <outlet property="pictureView" destination="17i-IL-uLq" id="ioc-9k-yxb"/>
+                <outlet property="titleLabel" destination="vlJ-dT-Blr" id="DSV-Y5-QVr"/>
+            </connections>
+            <point key="canvasLocation" x="208.69565217391306" y="372.65625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
