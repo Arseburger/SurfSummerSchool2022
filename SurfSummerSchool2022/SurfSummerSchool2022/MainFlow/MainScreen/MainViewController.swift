@@ -42,11 +42,7 @@ final class MainViewController: UIViewController {
     
     // MARK: Actions -
     
-    @objc
-    private func searchButtonTapped() {
-        let vc = SearchViewController()
-        navigationController?.pushViewController(vc, animated: true)
-    }
+    
 }
 
 // MARK: Setup Methods -
@@ -54,14 +50,10 @@ final class MainViewController: UIViewController {
 private extension MainViewController {
     
     func setupAppearence() {
-        navigationItem.title = "Главная"
         navigationController?.navigationBar.tintColor = .black
-        navigationItem.rightBarButtonItem = UIBarButtonItem(
-            image: UIImage(named: "searchIcon"),
-            style: .plain,
-            target: self,
-            action: #selector(searchButtonTapped)
-        )
+        navigationItem.title = "Главная"
+        navigationItem.backButtonTitle = ""
+        addNavigationBarSearchButton()
     }
     
     func setupCollectionView() {
@@ -97,6 +89,11 @@ extension MainViewController: UICollectionViewDataSource {
         }
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailViewController = DetailViewController()
+        navigationController?.pushViewController(detailViewController, animated: true)
     }
 }
 

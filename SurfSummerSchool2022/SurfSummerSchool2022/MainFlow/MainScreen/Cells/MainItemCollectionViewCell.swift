@@ -41,14 +41,14 @@ class MainItemCollectionViewCell: UICollectionViewCell {
         setupAppearence()
     }
     
-    func configure(with item: ItemModel) {
+    func configure(with item: DetailItemModel) {
         imageView.image = item.image
         titleLabel.text = item.title
         self.isFavorite = item.isFavorite
     }
     
     override func prepareForReuse() {
-        configure(with: ItemModel.defaultItem)
+        configure(with: DetailItemModel.defaultItem)
     }
     
     // MARK: Actions -
