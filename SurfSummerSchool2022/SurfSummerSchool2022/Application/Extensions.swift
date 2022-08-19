@@ -8,7 +8,12 @@
 import Foundation
 import UIKit
 
+// MARK: UIViewController -
+
 extension UIViewController {
+    
+    public typealias AlertActions = (confirm: UIAlertAction, decline: UIAlertAction)
+    
     func addNavigationBarSearchButton() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             image: UIImage(named: "searchIcon"),
@@ -18,14 +23,27 @@ extension UIViewController {
         )
     }
     
+    func createAlert(title: String = "Внимание", message: String, actions: AlertActions) -> UIAlertController {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let confirmAction = actions.confirm
+        let declineAction = actions.decline
+        alert.addAction(declineAction)
+        alert.addAction(confirmAction)
+        alert.preferredAction = confirmAction
+        return alert
+    }
+    
     @objc
-    private func searchButtonPressed() {
+    fileprivate func searchButtonPressed() {
         let searchVC = SearchViewController()
         navigationController?.pushViewController(searchVC, animated: true)
     }
 }
 
+// MARK: UINavigationController -
+
 extension UINavigationController {
+    
     func setupAppearence() {
         navigationBar.backIndicatorImage = UIImage(named: "backArrowIcon")
         navigationBar.backIndicatorTransitionMaskImage = UIImage(named: "backArrowIcon")
