@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class DetailViewController: UIViewController, UITableViewDelegate, UIGestureRecognizerDelegate {
+final class DetailViewController: UIViewController, UITableViewDelegate {
 
     // MARK: Views -
     
@@ -32,7 +32,7 @@ private extension DetailViewController {
     
     func setupAppearence() {
         navigationItem.title = detailItem.title
-        navigationController?.interactivePopGestureRecognizer?.delegate = self
+        navigationItem.backButtonTitle = ""
         addNavigationBarSearchButton()
     }
     

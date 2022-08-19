@@ -23,6 +23,8 @@
 		A85B5B2D28AE537D00E62D2C /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A85B5B2A28AE537D00E62D2C /* SF-Pro-Text-Medium.otf */; };
 		A85B5B2E28AE537D00E62D2C /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A85B5B2B28AE537D00E62D2C /* SF-Pro-Text-Semibold.otf */; };
 		A85B5B3228AE694300E62D2C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B5B3128AE694300E62D2C /* Extensions.swift */; };
+		A85B5B3628AE817500E62D2C /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85B5B3428AE817500E62D2C /* FavoriteTableViewCell.swift */; };
+		A85B5B3728AE817500E62D2C /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85B5B3528AE817500E62D2C /* FavoriteTableViewCell.xib */; };
 		A85F6BC1289A9C3B00C58BD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85F6BC0289A9C3B00C58BD3 /* AppDelegate.swift */; };
 		A85F6BCA289A9C3D00C58BD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A85F6BC9289A9C3D00C58BD3 /* Assets.xcassets */; };
 		A85F6BCD289A9C3D00C58BD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A85F6BCB289A9C3D00C58BD3 /* LaunchScreen.storyboard */; };
@@ -53,6 +55,8 @@
 		A85B5B2A28AE537D00E62D2C /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
 		A85B5B2B28AE537D00E62D2C /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
 		A85B5B3128AE694300E62D2C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A85B5B3428AE817500E62D2C /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
+		A85B5B3528AE817500E62D2C /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
 		A85F6BBD289A9C3B00C58BD3 /* SurfSummerSchool2022.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfSummerSchool2022.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A85F6BC0289A9C3B00C58BD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A85F6BC9289A9C3D00C58BD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -135,6 +139,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		A85B5B3328AE815F00E62D2C /* FavoriteTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A85B5B3428AE817500E62D2C /* FavoriteTableViewCell.swift */,
+				A85B5B3528AE817500E62D2C /* FavoriteTableViewCell.xib */,
+			);
+			path = FavoriteTableViewCell;
+			sourceTree = "<group>";
+		};
 		A85F6BB4289A9C3B00C58BD3 = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +223,7 @@
 		A85F6BD8289AA24D00C58BD3 /* FavoriteScreen */ = {
 			isa = PBXGroup;
 			children = (
+				A85B5B3328AE815F00E62D2C /* FavoriteTableViewCell */,
 				A85F6BDF289AA2A500C58BD3 /* FavoriteViewController.swift */,
 				A85F6BE0289AA2A500C58BD3 /* FavoriteViewController.xib */,
 			);
@@ -301,6 +315,7 @@
 				A85B5B2D28AE537D00E62D2C /* SF-Pro-Text-Medium.otf in Resources */,
 				A85F6BE2289AA2A500C58BD3 /* FavoriteViewController.xib in Resources */,
 				A85B5B2C28AE537D00E62D2C /* SF-Pro-Text-Regular.otf in Resources */,
+				A85B5B3728AE817500E62D2C /* FavoriteTableViewCell.xib in Resources */,
 				A85F6BE6289AA2B400C58BD3 /* ProfileViewController.xib in Resources */,
 				A85F6BCA289A9C3D00C58BD3 /* Assets.xcassets in Resources */,
 				A844DC5928AAB2CC00926CC0 /* SearchViewController.xib in Resources */,
@@ -323,6 +338,7 @@
 				A85F6BC1289A9C3B00C58BD3 /* AppDelegate.swift in Sources */,
 				A85B5B1E28AC0CFC00E62D2C /* DetailItemModel.swift in Sources */,
 				A844DC6428ABDFE900926CC0 /* DetailTableViewCell.swift in Sources */,
+				A85B5B3628AE817500E62D2C /* FavoriteTableViewCell.swift in Sources */,
 				A85F6BE5289AA2B400C58BD3 /* ProfileViewController.swift in Sources */,
 				A85B5B3228AE694300E62D2C /* Extensions.swift in Sources */,
 				A842970328A4250900474704 /* MainItemCollectionViewCell.swift in Sources */,
