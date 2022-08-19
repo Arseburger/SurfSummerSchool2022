@@ -14,7 +14,7 @@ private enum Images {
     static let heartFilled = UIImage(named: "heartFilled")
 }
 
-class MainItemCollectionViewCell: UICollectionViewCell {
+final class MainItemCollectionViewCell: UICollectionViewCell {
 
     // MARK: Views -
     
@@ -48,7 +48,9 @@ class MainItemCollectionViewCell: UICollectionViewCell {
     }
     
     override func prepareForReuse() {
-        configure(with: DetailItemModel.defaultItem)
+        imageView.image = nil
+        titleLabel.text = ""
+        self.isFavorite = false
     }
     
     // MARK: Actions -
