@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A837CE3C28B2837A00100344 /* NetworkMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837CE3B28B2837A00100344 /* NetworkMethod.swift */; };
+		A837CE3E28B2838E00100344 /* NetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837CE3D28B2838E00100344 /* NetworkTask.swift */; };
+		A837CE4028B283AB00100344 /* BaseNetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837CE3F28B283AB00100344 /* BaseNetworkTask.swift */; };
+		A837CE4328B288FF00100344 /* BaseTokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837CE4228B288FF00100344 /* BaseTokenStorage.swift */; };
+		A837CE4528B2891100100344 /* TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837CE4428B2891100100344 /* TokenStorage.swift */; };
+		A837CE4728B2892100100344 /* TokenContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837CE4628B2892100100344 /* TokenContainer.swift */; };
+		A837CE4928B28A5A00100344 /* EmptyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837CE4828B28A5A00100344 /* EmptyModel.swift */; };
 		A842970328A4250900474704 /* MainItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A842970128A4250900474704 /* MainItemCollectionViewCell.swift */; };
 		A842970428A4250900474704 /* MainItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A842970228A4250900474704 /* MainItemCollectionViewCell.xib */; };
 		A842970828A427A300474704 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A842970728A427A300474704 /* MainModel.swift */; };
@@ -39,6 +46,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A837CE3B28B2837A00100344 /* NetworkMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMethod.swift; sourceTree = "<group>"; };
+		A837CE3D28B2838E00100344 /* NetworkTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTask.swift; sourceTree = "<group>"; };
+		A837CE3F28B283AB00100344 /* BaseNetworkTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkTask.swift; sourceTree = "<group>"; };
+		A837CE4228B288FF00100344 /* BaseTokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTokenStorage.swift; sourceTree = "<group>"; };
+		A837CE4428B2891100100344 /* TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStorage.swift; sourceTree = "<group>"; };
+		A837CE4628B2892100100344 /* TokenContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenContainer.swift; sourceTree = "<group>"; };
+		A837CE4828B28A5A00100344 /* EmptyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyModel.swift; sourceTree = "<group>"; };
 		A842970128A4250900474704 /* MainItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		A842970228A4250900474704 /* MainItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		A842970728A427A300474704 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
@@ -83,6 +97,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A837CE3828B282F100100344 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A837CE3928B282FD00100344 /* Networking */,
+				A837CE4128B283CF00100344 /* Storage */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A837CE3928B282FD00100344 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A837CE3A28B2832F00100344 /* Core */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A837CE3A28B2832F00100344 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A837CE3B28B2837A00100344 /* NetworkMethod.swift */,
+				A837CE3D28B2838E00100344 /* NetworkTask.swift */,
+				A837CE3F28B283AB00100344 /* BaseNetworkTask.swift */,
+				A837CE4828B28A5A00100344 /* EmptyModel.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A837CE4128B283CF00100344 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				A837CE4228B288FF00100344 /* BaseTokenStorage.swift */,
+				A837CE4428B2891100100344 /* TokenStorage.swift */,
+				A837CE4628B2892100100344 /* TokenContainer.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 		A842970028A424CF00474704 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +219,7 @@
 		A85F6BBF289A9C3B00C58BD3 /* SurfSummerSchool2022 */ = {
 			isa = PBXGroup;
 			children = (
+				A837CE3828B282F100100344 /* Services */,
 				A85F6BD6289AA22A00C58BD3 /* MainFlow */,
 				A85F6BD4289A9EE600C58BD3 /* Application */,
 				A85F6BD5289A9F4100C58BD3 /* Resources */,
@@ -334,14 +387,21 @@
 				A844DC5828AAB2CC00926CC0 /* SearchViewController.swift in Sources */,
 				A842970828A427A300474704 /* MainModel.swift in Sources */,
 				A842970B28A99BA100474704 /* Colors.swift in Sources */,
+				A837CE4728B2892100100344 /* TokenContainer.swift in Sources */,
 				A85F6BDD289AA29300C58BD3 /* MainViewController.swift in Sources */,
 				A85F6BC1289A9C3B00C58BD3 /* AppDelegate.swift in Sources */,
+				A837CE4928B28A5A00100344 /* EmptyModel.swift in Sources */,
 				A85B5B1E28AC0CFC00E62D2C /* DetailItemModel.swift in Sources */,
 				A844DC6428ABDFE900926CC0 /* DetailTableViewCell.swift in Sources */,
 				A85B5B3628AE817500E62D2C /* FavoriteTableViewCell.swift in Sources */,
+				A837CE4528B2891100100344 /* TokenStorage.swift in Sources */,
+				A837CE4328B288FF00100344 /* BaseTokenStorage.swift in Sources */,
 				A85F6BE5289AA2B400C58BD3 /* ProfileViewController.swift in Sources */,
 				A85B5B3228AE694300E62D2C /* Extensions.swift in Sources */,
 				A842970328A4250900474704 /* MainItemCollectionViewCell.swift in Sources */,
+				A837CE3E28B2838E00100344 /* NetworkTask.swift in Sources */,
+				A837CE3C28B2837A00100344 /* NetworkMethod.swift in Sources */,
+				A837CE4028B283AB00100344 /* BaseNetworkTask.swift in Sources */,
 				A85F6BE1289AA2A500C58BD3 /* FavoriteViewController.swift in Sources */,
 				A85F6BE8289AA2F100C58BD3 /* TabBarConfigurator.swift in Sources */,
 				A85F6BEA289AA2FD00C58BD3 /* TabBarModel.swift in Sources */,
