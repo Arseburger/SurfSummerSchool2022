@@ -15,7 +15,7 @@ final class MainModel {
     
     // MARK: Properties -
     
-    var items: [DetailItemModel] = [] {
+    var items: [ItemModel] = [] {
         didSet {
             didUpdateItems?()
         }
@@ -28,3 +28,18 @@ final class MainModel {
     }
 }
 
+struct ItemModel {
+    let image: UIImage?
+    let title: String
+    var isFavorite: Bool
+    let description: String
+    let creationDate: String
+    
+    static let defaultItem: ItemModel = .init(
+        image: UIImage(named: "defaultImage"),
+        title: "Чашечка свежего кофе",
+        isFavorite: false,
+        description: "Для бариста и посетителей кофеен специальные кружки для кофе — это ещё один способ проконтролировать вкус напитка и приготовить его именно так, как нравится вам. \n Теперь, кроме регулировки экстракции, настройки помола, времени заваривания и многого что помогает выделять нужные характеристики кофе, вы сможете выбрать и кружку для кофе в зависимости от сорта",
+        creationDate: "12.05.2022"
+    )
+}

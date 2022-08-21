@@ -21,7 +21,7 @@ final class ProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupAppearence()
+        configureAppearence()
         configureTableView()
     }
 
@@ -44,8 +44,8 @@ final class ProfileViewController: UIViewController {
 // MARK: Private Methods -
 
 private extension ProfileViewController {
-
-    func setupAppearence() {
+    
+    func configureAppearence() {
         navigationItem.title = "Профиль"
     }
     

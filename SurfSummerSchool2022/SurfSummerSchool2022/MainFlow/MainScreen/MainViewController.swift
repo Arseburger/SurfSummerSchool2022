@@ -36,8 +36,10 @@ final class MainViewController: UIViewController {
         collectionView.reloadData()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        navigationController?.setNavigationBarHidden(false, animated: true)
+    // MARK: Actions -
+    
+    @objc
+    private func searchButtonTapped() {
     }
 }
 
@@ -46,10 +48,14 @@ final class MainViewController: UIViewController {
 private extension MainViewController {
     
     func setupAppearence() {
-        navigationController?.navigationBar.tintColor = .black
         navigationItem.title = "Главная"
-        navigationItem.backButtonTitle = ""
-        addNavigationBarSearchButton()
+        navigationController?.navigationBar.tintColor = .black
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            image: UIImage(named: "searchIcon"),
+            style: .plain,
+            target: self,
+            action: #selector(searchButtonTapped)
+        )
     }
     
     func setupCollectionView() {
@@ -85,11 +91,6 @@ extension MainViewController: UICollectionViewDataSource {
         }
         
         return cell
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let detailViewController = DetailViewController()
-        navigationController?.pushViewController(detailViewController, animated: true)
     }
 }
 
