@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthorizationViewController" customModule="SurfSummerSchool2022" customModuleProvider="target">
+            <connections>
+                <outlet property="loginTextField" destination="mvj-7t-SLp" id="Xia-xG-Eh1"/>
+                <outlet property="passwordTextField" destination="Oir-I0-JWi" id="wTJ-CO-fCM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="surfEducationLogo" translatesAutoresizingMaskIntoConstraints="NO" id="WEX-0A-Gae">
+                    <rect key="frame" x="-35" y="400" width="216" height="216"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="216" id="BWy-xD-a6F"/>
+                        <constraint firstAttribute="width" constant="216" id="TQq-H9-97S"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyf-9P-x6f">
+                    <rect key="frame" x="16" y="268" width="382" height="48"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="z9l-Nf-VQb"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Войти">
+                        <fontDescription key="titleFontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="16"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="signInButtonPressed:" destination="-1" eventType="touchUpInside" id="x05-Ay-tJ2"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Логин" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxo-QT-tJb">
+                    <rect key="frame" x="16" y="55" width="36" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="GZu-nF-6l4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BY3-RM-8mV">
+                    <rect key="frame" x="16" y="155" width="43.5" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="bWY-zt-M9i"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Логин" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mvj-7t-SLp">
+                    <rect key="frame" x="16" y="76" width="382" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="tEF-Yg-Jax"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oir-I0-JWi">
+                    <rect key="frame" x="16" y="176" width="382" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="tpR-6i-KYL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="mvj-7t-SLp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="0LC-0m-bv9"/>
+                <constraint firstItem="eyf-9P-x6f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="5Ry-Yf-LjW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mvj-7t-SLp" secondAttribute="trailing" constant="16" id="8Uq-E8-eA1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eyf-9P-x6f" secondAttribute="trailing" constant="16" id="Cif-yT-9XS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fxo-QT-tJb" secondAttribute="trailing" constant="16" id="Dcx-ht-KuV"/>
+                <constraint firstItem="Oir-I0-JWi" firstAttribute="top" secondItem="mvj-7t-SLp" secondAttribute="bottom" constant="40" id="FQP-8N-v4O"/>
+                <constraint firstItem="Oir-I0-JWi" firstAttribute="top" secondItem="BY3-RM-8mV" secondAttribute="bottom" id="LCZ-Ys-yhU"/>
+                <constraint firstItem="eyf-9P-x6f" firstAttribute="top" secondItem="Oir-I0-JWi" secondAttribute="bottom" constant="32" id="LIX-QT-Y4I"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BY3-RM-8mV" secondAttribute="trailing" constant="16" id="RHr-R5-zkV"/>
+                <constraint firstItem="mvj-7t-SLp" firstAttribute="top" secondItem="fxo-QT-tJb" secondAttribute="bottom" id="T99-6W-LFT"/>
+                <constraint firstItem="WEX-0A-Gae" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="-35" id="VAq-4R-Xrw"/>
+                <constraint firstItem="Oir-I0-JWi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Wv6-kS-aXM"/>
+                <constraint firstItem="BY3-RM-8mV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="cmJ-R7-pQG"/>
+                <constraint firstItem="WEX-0A-Gae" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="60" id="g65-gB-HXM"/>
+                <constraint firstItem="fxo-QT-tJb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="uvK-mM-gje"/>
+                <constraint firstItem="mvj-7t-SLp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="vok-ny-kdv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Oir-I0-JWi" secondAttribute="trailing" constant="16" id="z05-06-1Vk"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="147"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="surfEducationLogo" width="159" height="234"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

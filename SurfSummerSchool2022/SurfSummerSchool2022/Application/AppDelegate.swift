@@ -20,7 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window?.overrideUserInterfaceStyle = .light
         }
         
-        runMainFlow()
+//        runMainFlow()
+        runAuthorizationFlow()
         
         return true
     }
@@ -28,5 +29,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func runMainFlow() {
         let vc = TabBarConfigurator().configure()
         window?.rootViewController = vc
+    }
+    
+    func runAuthorizationFlow() {
+        let vc = AuthorizationViewController()
+        window?.rootViewController = UINavigationController(rootViewController: vc)
     }
 }

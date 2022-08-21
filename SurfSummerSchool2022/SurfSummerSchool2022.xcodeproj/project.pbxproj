@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A837CE3028B05EC000100344 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837CE2E28B05EC000100344 /* AuthorizationViewController.swift */; };
+		A837CE3128B05EC000100344 /* AuthorizationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A837CE2F28B05EC000100344 /* AuthorizationViewController.xib */; };
+		A837CE3328B0629800100344 /* AuthorizationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837CE3228B0629800100344 /* AuthorizationTextField.swift */; };
+		A837CE3528B11CE500100344 /* AuthorizationTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = A837CE3428B11CE500100344 /* AuthorizationTextField.xib */; };
 		A842970328A4250900474704 /* MainItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A842970128A4250900474704 /* MainItemCollectionViewCell.swift */; };
 		A842970428A4250900474704 /* MainItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A842970228A4250900474704 /* MainItemCollectionViewCell.xib */; };
 		A842970828A427A300474704 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A842970728A427A300474704 /* MainModel.swift */; };
@@ -39,6 +43,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A837CE2E28B05EC000100344 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
+		A837CE2F28B05EC000100344 /* AuthorizationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthorizationViewController.xib; sourceTree = "<group>"; };
+		A837CE3228B0629800100344 /* AuthorizationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationTextField.swift; sourceTree = "<group>"; };
+		A837CE3428B11CE500100344 /* AuthorizationTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthorizationTextField.xib; sourceTree = "<group>"; };
 		A842970128A4250900474704 /* MainItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		A842970228A4250900474704 /* MainItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		A842970728A427A300474704 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
@@ -83,6 +91,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A837CE2D28B05EA700100344 /* AuthorizationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A837CE2E28B05EC000100344 /* AuthorizationViewController.swift */,
+				A837CE2F28B05EC000100344 /* AuthorizationViewController.xib */,
+				A837CE3628B12E2E00100344 /* AuthorizationTextField */,
+			);
+			path = AuthorizationScreen;
+			sourceTree = "<group>";
+		};
+		A837CE3628B12E2E00100344 /* AuthorizationTextField */ = {
+			isa = PBXGroup;
+			children = (
+				A837CE3228B0629800100344 /* AuthorizationTextField.swift */,
+				A837CE3428B11CE500100344 /* AuthorizationTextField.xib */,
+			);
+			path = AuthorizationTextField;
+			sourceTree = "<group>";
+		};
+		A837CE3728B2825600100344 /* AuthorizationFlow */ = {
+			isa = PBXGroup;
+			children = (
+				A837CE2D28B05EA700100344 /* AuthorizationScreen */,
+			);
+			path = AuthorizationFlow;
+			sourceTree = "<group>";
+		};
 		A842970028A424CF00474704 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +202,7 @@
 		A85F6BBF289A9C3B00C58BD3 /* SurfSummerSchool2022 */ = {
 			isa = PBXGroup;
 			children = (
+				A837CE3728B2825600100344 /* AuthorizationFlow */,
 				A85F6BD6289AA22A00C58BD3 /* MainFlow */,
 				A85F6BD4289A9EE600C58BD3 /* Application */,
 				A85F6BD5289A9F4100C58BD3 /* Resources */,
@@ -306,12 +342,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A837CE3528B11CE500100344 /* AuthorizationTextField.xib in Resources */,
 				A85B5B2E28AE537D00E62D2C /* SF-Pro-Text-Semibold.otf in Resources */,
 				A85F6BCD289A9C3D00C58BD3 /* LaunchScreen.storyboard in Resources */,
 				A844DC6528ABDFE900926CC0 /* DetailTableViewCell.xib in Resources */,
 				A85F6BDE289AA29300C58BD3 /* MainViewController.xib in Resources */,
 				A842970428A4250900474704 /* MainItemCollectionViewCell.xib in Resources */,
 				A844DC5E28ABDCBB00926CC0 /* DetailViewController.xib in Resources */,
+				A837CE3128B05EC000100344 /* AuthorizationViewController.xib in Resources */,
 				A85B5B2D28AE537D00E62D2C /* SF-Pro-Text-Medium.otf in Resources */,
 				A85F6BE2289AA2A500C58BD3 /* FavoriteViewController.xib in Resources */,
 				A85B5B2C28AE537D00E62D2C /* SF-Pro-Text-Regular.otf in Resources */,
@@ -330,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A85B5B2028AE4CAE00E62D2C /* Fonts.swift in Sources */,
+				A837CE3328B0629800100344 /* AuthorizationTextField.swift in Sources */,
 				A844DC5D28ABDCBB00926CC0 /* DetailViewController.swift in Sources */,
 				A844DC5828AAB2CC00926CC0 /* SearchViewController.swift in Sources */,
 				A842970828A427A300474704 /* MainModel.swift in Sources */,
@@ -337,6 +376,7 @@
 				A85F6BDD289AA29300C58BD3 /* MainViewController.swift in Sources */,
 				A85F6BC1289A9C3B00C58BD3 /* AppDelegate.swift in Sources */,
 				A85B5B1E28AC0CFC00E62D2C /* DetailItemModel.swift in Sources */,
+				A837CE3028B05EC000100344 /* AuthorizationViewController.swift in Sources */,
 				A844DC6428ABDFE900926CC0 /* DetailTableViewCell.swift in Sources */,
 				A85B5B3628AE817500E62D2C /* FavoriteTableViewCell.swift in Sources */,
 				A85F6BE5289AA2B400C58BD3 /* ProfileViewController.swift in Sources */,
