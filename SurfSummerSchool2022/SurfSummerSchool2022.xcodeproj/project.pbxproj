@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A837CE5428B2BD1400100344 /* SingleFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A837CE4C28B2BD1300100344 /* SingleFieldTableViewCell.xib */; };
+		A837CE5528B2BD1400100344 /* SingleFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837CE4D28B2BD1300100344 /* SingleFieldTableViewCell.swift */; };
+		A837CE5628B2BD1400100344 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A837CE4F28B2BD1300100344 /* MainTableViewCell.xib */; };
+		A837CE5728B2BD1400100344 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837CE5028B2BD1300100344 /* MainTableViewCell.swift */; };
+		A837CE5828B2BD1400100344 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A837CE5128B2BD1300100344 /* ProfileViewController.xib */; };
+		A837CE5928B2BD1400100344 /* ProfileConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837CE5228B2BD1300100344 /* ProfileConfigurator.swift */; };
+		A837CE5A28B2BD1400100344 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837CE5328B2BD1400100344 /* ProfileViewController.swift */; };
 		A842970328A4250900474704 /* MainItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A842970128A4250900474704 /* MainItemCollectionViewCell.swift */; };
 		A842970428A4250900474704 /* MainItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A842970228A4250900474704 /* MainItemCollectionViewCell.xib */; };
 		A842970828A427A300474704 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A842970728A427A300474704 /* MainModel.swift */; };
@@ -32,13 +39,18 @@
 		A85F6BDE289AA29300C58BD3 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85F6BDC289AA29300C58BD3 /* MainViewController.xib */; };
 		A85F6BE1289AA2A500C58BD3 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85F6BDF289AA2A500C58BD3 /* FavoriteViewController.swift */; };
 		A85F6BE2289AA2A500C58BD3 /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85F6BE0289AA2A500C58BD3 /* FavoriteViewController.xib */; };
-		A85F6BE5289AA2B400C58BD3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85F6BE3289AA2B400C58BD3 /* ProfileViewController.swift */; };
-		A85F6BE6289AA2B400C58BD3 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A85F6BE4289AA2B400C58BD3 /* ProfileViewController.xib */; };
 		A85F6BE8289AA2F100C58BD3 /* TabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85F6BE7289AA2F100C58BD3 /* TabBarConfigurator.swift */; };
 		A85F6BEA289AA2FD00C58BD3 /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85F6BE9289AA2FD00C58BD3 /* TabBarModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A837CE4C28B2BD1300100344 /* SingleFieldTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingleFieldTableViewCell.xib; sourceTree = "<group>"; };
+		A837CE4D28B2BD1300100344 /* SingleFieldTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleFieldTableViewCell.swift; sourceTree = "<group>"; };
+		A837CE4F28B2BD1300100344 /* MainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		A837CE5028B2BD1300100344 /* MainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		A837CE5128B2BD1300100344 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		A837CE5228B2BD1300100344 /* ProfileConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileConfigurator.swift; sourceTree = "<group>"; };
+		A837CE5328B2BD1400100344 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A842970128A4250900474704 /* MainItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		A842970228A4250900474704 /* MainItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		A842970728A427A300474704 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
@@ -66,8 +78,6 @@
 		A85F6BDC289AA29300C58BD3 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		A85F6BDF289AA2A500C58BD3 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		A85F6BE0289AA2A500C58BD3 /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
-		A85F6BE3289AA2B400C58BD3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		A85F6BE4289AA2B400C58BD3 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		A85F6BE7289AA2F100C58BD3 /* TabBarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarConfigurator.swift; sourceTree = "<group>"; };
 		A85F6BE9289AA2FD00C58BD3 /* TabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +93,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A837CE4A28B2BD1300100344 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A837CE4B28B2BD1300100344 /* SingleFieldTableViewCell */,
+				A837CE4E28B2BD1300100344 /* MainTableViewCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A837CE4B28B2BD1300100344 /* SingleFieldTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A837CE4C28B2BD1300100344 /* SingleFieldTableViewCell.xib */,
+				A837CE4D28B2BD1300100344 /* SingleFieldTableViewCell.swift */,
+			);
+			path = SingleFieldTableViewCell;
+			sourceTree = "<group>";
+		};
+		A837CE4E28B2BD1300100344 /* MainTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A837CE4F28B2BD1300100344 /* MainTableViewCell.xib */,
+				A837CE5028B2BD1300100344 /* MainTableViewCell.swift */,
+			);
+			path = MainTableViewCell;
+			sourceTree = "<group>";
+		};
 		A842970028A424CF00474704 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,8 +270,10 @@
 		A85F6BD9289AA25A00C58BD3 /* ProfileScreen */ = {
 			isa = PBXGroup;
 			children = (
-				A85F6BE3289AA2B400C58BD3 /* ProfileViewController.swift */,
-				A85F6BE4289AA2B400C58BD3 /* ProfileViewController.xib */,
+				A837CE4A28B2BD1300100344 /* Cells */,
+				A837CE5228B2BD1300100344 /* ProfileConfigurator.swift */,
+				A837CE5328B2BD1400100344 /* ProfileViewController.swift */,
+				A837CE5128B2BD1300100344 /* ProfileViewController.xib */,
 			);
 			path = ProfileScreen;
 			sourceTree = "<group>";
@@ -309,14 +348,16 @@
 				A85B5B2E28AE537D00E62D2C /* SF-Pro-Text-Semibold.otf in Resources */,
 				A85F6BCD289A9C3D00C58BD3 /* LaunchScreen.storyboard in Resources */,
 				A844DC6528ABDFE900926CC0 /* DetailTableViewCell.xib in Resources */,
+				A837CE5828B2BD1400100344 /* ProfileViewController.xib in Resources */,
 				A85F6BDE289AA29300C58BD3 /* MainViewController.xib in Resources */,
+				A837CE5628B2BD1400100344 /* MainTableViewCell.xib in Resources */,
 				A842970428A4250900474704 /* MainItemCollectionViewCell.xib in Resources */,
+				A837CE5428B2BD1400100344 /* SingleFieldTableViewCell.xib in Resources */,
 				A844DC5E28ABDCBB00926CC0 /* DetailViewController.xib in Resources */,
 				A85B5B2D28AE537D00E62D2C /* SF-Pro-Text-Medium.otf in Resources */,
 				A85F6BE2289AA2A500C58BD3 /* FavoriteViewController.xib in Resources */,
 				A85B5B2C28AE537D00E62D2C /* SF-Pro-Text-Regular.otf in Resources */,
 				A85B5B3728AE817500E62D2C /* FavoriteTableViewCell.xib in Resources */,
-				A85F6BE6289AA2B400C58BD3 /* ProfileViewController.xib in Resources */,
 				A85F6BCA289A9C3D00C58BD3 /* Assets.xcassets in Resources */,
 				A844DC5928AAB2CC00926CC0 /* SearchViewController.xib in Resources */,
 			);
@@ -331,19 +372,22 @@
 			files = (
 				A85B5B2028AE4CAE00E62D2C /* Fonts.swift in Sources */,
 				A844DC5D28ABDCBB00926CC0 /* DetailViewController.swift in Sources */,
+				A837CE5528B2BD1400100344 /* SingleFieldTableViewCell.swift in Sources */,
 				A844DC5828AAB2CC00926CC0 /* SearchViewController.swift in Sources */,
 				A842970828A427A300474704 /* MainModel.swift in Sources */,
 				A842970B28A99BA100474704 /* Colors.swift in Sources */,
+				A837CE5728B2BD1400100344 /* MainTableViewCell.swift in Sources */,
 				A85F6BDD289AA29300C58BD3 /* MainViewController.swift in Sources */,
 				A85F6BC1289A9C3B00C58BD3 /* AppDelegate.swift in Sources */,
+				A837CE5A28B2BD1400100344 /* ProfileViewController.swift in Sources */,
 				A85B5B1E28AC0CFC00E62D2C /* DetailItemModel.swift in Sources */,
 				A844DC6428ABDFE900926CC0 /* DetailTableViewCell.swift in Sources */,
 				A85B5B3628AE817500E62D2C /* FavoriteTableViewCell.swift in Sources */,
-				A85F6BE5289AA2B400C58BD3 /* ProfileViewController.swift in Sources */,
 				A85B5B3228AE694300E62D2C /* Extensions.swift in Sources */,
 				A842970328A4250900474704 /* MainItemCollectionViewCell.swift in Sources */,
 				A85F6BE1289AA2A500C58BD3 /* FavoriteViewController.swift in Sources */,
 				A85F6BE8289AA2F100C58BD3 /* TabBarConfigurator.swift in Sources */,
+				A837CE5928B2BD1400100344 /* ProfileConfigurator.swift in Sources */,
 				A85F6BEA289AA2FD00C58BD3 /* TabBarModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
